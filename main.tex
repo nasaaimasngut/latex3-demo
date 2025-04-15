@@ -1,0 +1,17 @@
+\documentclass{article}
+\usepackage{expl3}
+
+\begin{document}
+
+\ExplSyntaxOn
+
+% Declare a variable
+\int_new:N \l_my_int
+
+% Set and print it
+\int_set:Nn \l_my_int { 5 }
+The value is~\int_use:N \l_my_int .
+
+\ExplSyntaxOff
+
+\end{document}
